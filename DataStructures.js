@@ -9,7 +9,7 @@ var PriorityQueue = function (comparator) {
 
 /**
 Method may be overridden in constructor if you need to compare complex objects
-By default true is first object is less than second
+By default true if first object is less than second
 */
 PriorityQueue.prototype.compare = function(first, second) {
     return first < second
