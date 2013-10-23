@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<a href="#" id="testLink">test</a>
+<script type="text/javascript" src="PubSub.js">;</script>
+<script type="text/javascript">
+    PubSub.subscribe("test_event", function() {
+        alert("test_event fired")
+    })
+
+    var testfunc = function() {
+        PubSub.publish("test_event")
+    }
+    var link = document.getElementById("testLink")
+    link.addEventListener("click", testfunc)
+</script>
+
+</body>
+</html>
