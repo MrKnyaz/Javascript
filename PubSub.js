@@ -9,7 +9,7 @@ var PubSub = {
         }
     },
     subscribe: function(topic, event) {
-        //if we don't have such topic, create topic and empty array of subscribers
+        //if we don't have such topic, create topic and an empty array of subscribers
         if (this.topics[topic] === undefined) {
             this.topics[topic] = []
         }
